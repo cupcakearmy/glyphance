@@ -1,12 +1,16 @@
 # Glyphance
 
-This is a CLI utility that help reduce load times and bytes by splitting typography files into smaller chunks for different alphabets automatically _without the tears_.
+<kbd>/ɡlɪfhɑːns/</kdb>
+
+This is a CLI utility that help reduce load times and bytes by splitting typography files into smaller chunks for different unicode ranges automatically _without the tears_.
 
 ## 🌈 Features
 
 - Configurable.
 - Config driven.
-- Docker image, no install required.
+- Docker image, no local install required.
+- Outputs `woff2`.
+- Provides a generated CSS file to simply include.
 
 ## 🚀 Quickstart
 
@@ -51,12 +55,14 @@ output:
 ### Run
 
 ```bash
-docker run -v $(pwd)/example:/data glyphance
+docker run -v $(pwd)/example:/data cupcakearmy/glyphance
 ```
 
 ### Enjoy
 
-Now you can use the generated font files and the `generated/fonts.css`.
+Now you can use the generated font files and import the `generated/fonts.css` into your code.
+
+> Remember you can modify the `prefix` to match the folder structure of your static files.
 
 ```
 example/
@@ -98,4 +104,34 @@ output:
   clean: true # Whether to clean to output directory first
   css:
     font-weight: 400 # CSS to added to each @font-face. By defaults includes swap, normal weight and style
+```
+
+### Provide custom unicode ranges
+
+By default Glyphance uses the same ranges as Google Fonts. However you can customize and specify your own ranges. See the [list of possible values](https://en.wikipedia.org/wiki/List_of_Unicode_characters).
+
+```yaml
+fonts:
+  'Mulish':
+    - file: Mulish-VariableFont_wght.ttf
+      variable: true
+      css:
+        font-weight: 200 1000
+    - file: Mulish-Italic-VariableFont_wght.ttf
+      variable: true
+      css:
+        font-weight: 200 1000
+        font-style: italic
+  'FireCode':
+    - file: FiraCode-VariableFont_wght.ttf
+      variable: true
+      css:
+        font-weight: 300 700
+
+output:
+  ranges:
+    abc: U+0061-0063
+    numbers: U+0030-0039
+    dot: U+002E
+  ""
 ```
