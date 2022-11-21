@@ -4,6 +4,10 @@
 
 This is a CLI utility that help reduce load times and bytes by splitting typography files into smaller chunks for different unicode ranges automatically _without the tears_.
 
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/cupcakearmy/glyphance?sort=semver&style=flat-square)
+![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/cupcakearmy/glyphance?sort=semver&style=flat-square)
+![Docker Pulls](https://img.shields.io/docker/pulls/cupcakearmy/glyphance?style=flat-square)
+
 ## 🌈 Features
 
 - Configurable.
