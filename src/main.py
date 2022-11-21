@@ -8,7 +8,7 @@ from config import load, validate
 
 
 @click.command()
-@click.version_option("0.1.0")
+@click.version_option("1.0.0")
 @click.option('-v', '--verbose', is_flag=True, default=False, help="Run in verbose mode.")
 @click.option('-c', '--config', type=click.Path(), required=True, help="Path to the config file.")
 @click.option('-o', '--output-directory', type=click.Path(), help="Path to the output directory.")
