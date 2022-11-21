@@ -1,0 +1,7 @@
+/* $range */
+@font-face {
+  font-family: '$font';
+  src: $src;
+  unicode-range: $unicodes;
+  $additional
+}

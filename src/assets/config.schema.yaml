@@ -1,0 +1,77 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://github.com/cupcakearmy/glyphance
+title: Config
+type: object
+additionalProperties: false
+properties:
+  fonts:
+    $ref: "#/$defs/fonts"
+  output:
+    $ref: "#/$defs/output"
+  context:
+    type: string
+
+$defs:
+  fonts:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "^[a-zA-z \\-_]+$":
+        $ref: "#/$defs/font"
+
+  font:
+    type: array
+    items:
+      $ref: "#/$defs/font-variation"
+
+  css:
+    # https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#descriptors
+    type: object
+    additionalProperties: false
+    patternProperties:
+      ? "^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$"
+      : type: string
+
+  font-variation:
+    type: object
+    additionalProperties: false
+    requiredProperties:
+      - file
+    properties:
+      file:
+        type: string
+      variable:
+        type: boolean
+      css:
+        $ref: "#/$defs/css"
+  range:
+    type: string
+    patter: ^U\+[\da-zA-z]{4}(-[\da-zA-z]{4})?$
+
+  output:
+    type: object
+    additionalProperties: false
+    properties:
+      dir:
+        type: string
+      prefix:
+        type: string
+      css:
+        $ref: "#/$defs/css"
+      clean:
+        type: boolean
+      formats:
+        type: array
+        items:
+          type: string
+          enum:
+            - woff2
+            - woff
+      ranges:
+        type: object
+        additionalProperties: false
+        patternProperties:
+          "^[a-zA-z \\-_]+$":
+            type: array
+            items:
+              $ref: "#/$defs/range"

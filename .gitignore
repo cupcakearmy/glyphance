@@ -1,0 +1,11 @@
+.venv
+.mypy_cache
+__pycache__
+.devcontainer
+.vscode
+
+data
+generated
+example
+
+config.yaml
