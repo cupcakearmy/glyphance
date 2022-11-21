@@ -25,10 +25,10 @@ $defs:
       $ref: "#/$defs/font-variation"
 
   css:
-    # https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#descriptors
     type: object
     additionalProperties: false
     patternProperties:
+      # https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#descriptors
       ? "^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$"
       : type: string
 

@@ -1,5 +1,6 @@
 
 import click
+import jsonschema
 
 import cmd_optimise
 import flags
@@ -24,7 +25,12 @@ def cli(verbose, config, output_directory, clean, prefix):
 
     # Run
     c = load(config)
-    validate(c)
+    try:
+        validate(c)
+    except jsonschema.exceptions.ValidationError as e:
+        click.echo(f"Config validation failed:")
+        click.echo(f"{e.message} @ {e.json_path}")
+        exit(1)
     cmd_optimise.optimise(c)
 
 
