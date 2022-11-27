@@ -1,5 +1,6 @@
 import os
 
+import click
 import jsonschema
 import yaml
 
@@ -31,9 +32,17 @@ def validate(config):
 
 def load(path):
     # Load config
-    path = os.path.abspath(path)
-    with open(path, 'r') as f:
-        config = yaml.safe_load(f)
+    try:
+        path = os.path.abspath(path)
+        with open(path, 'r') as f:
+            config = yaml.safe_load(f)
+    except FileNotFoundError:
+        click.echo(f"Config file not found: {path}")
+        exit(1)
+    except yaml.YAMLError as e:
+        click.echo(f"Config file is not valid YAML: {path}")
+        click.echo(e)
+        exit(1)
 
     # Setting dynamic defaults
     default_config['context'] = os.path.dirname(path)
