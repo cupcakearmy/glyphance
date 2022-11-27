@@ -8,8 +8,8 @@ ENV PATH ${POETRY_HOME}/bin:$PATH
 
 # Install Deps
 WORKDIR /app
-COPY poetry.lock poetry.toml pyproject.toml ./
-RUN poetry install
+COPY poetry.lock pyproject.toml ./
+RUN poetry install --no-cache --without dev --sync
 
 # Copy code
 COPY . .
