@@ -5,3 +5,6 @@ jsonschema:
 	pnpm dlx @adobe/jsonschema2md --input tmp --out docs/config
 	rm -r out
 	rm -r tmp
+
+docker:
+	docker build -t glyphance .
