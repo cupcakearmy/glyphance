@@ -10,10 +10,7 @@ import utils
 with open(utils.asset_path('ranges.json')) as f:
     default_ranges = json.load(f)
 
-default_variation = {
-    'variable': False,
-    'css': {}
-}
+default_variation = {'variable': False, 'css': {}}
 
 
 def optimise(config):
@@ -45,19 +42,19 @@ def optimise(config):
         css += f'\n\n/* {font} */\n'
         for variation in variations:
             variation = utils.update_deep(default_variation, variation)
-            print(f"Processing: {font} {os.path.basename(variation['file'])}")
+            print(f'Processing: {font} {os.path.basename(variation["file"])}')
             source = os.path.join(config['context'], variation['file'])
             for format in config['output']['formats']:
                 for range, codes in default_ranges.items():
                     unicodes = ', '.join(codes)
 
                     # Create unique key on all parameters
-                    key = font+variation['file']+format+unicodes
+                    key = font + variation['file'] + format + unicodes
                     key = hashlib.sha1(key.encode()).hexdigest()
 
                     # Generate subset
                     output_file = os.path.join(destination, f'{key}.{format}')
-                    print(f"  {range}@{format} -> {output_file}")
+                    print(f'  {range}@{format} -> {output_file}')
                     command = f'pyftsubset --unicodes="{unicodes}" --layout-features="*" --flavor="{format}" --output-file="{output_file}" {source}'
                     subprocess.call(command, shell=True)
 
@@ -67,10 +64,19 @@ def optimise(config):
                         ending += '-variations'
 
                     src = f"url({config['output']['prefix']}{os.path.basename(output_file)}) format('{ending}')"
-                    merged = utils.update_deep(config['output']['css'], variation['css'])
-                    additional = '\n  '.join([f"{key}: {value};" for key, value in merged.items()])
-                    css += template.substitute(range=range, font=font, src=src,
-                                               unicodes=unicodes, additional=additional)
+                    merged = utils.update_deep(
+                        config['output']['css'], variation['css']
+                    )
+                    additional = '\n  '.join(
+                        [f'{key}: {value};' for key, value in merged.items()]
+                    )
+                    css += template.substitute(
+                        range=range,
+                        font=font,
+                        src=src,
+                        unicodes=unicodes,
+                        additional=additional,
+                    )
 
     with open(os.path.join(destination, 'fonts.css'), 'w') as f:
         f.write(css.strip())

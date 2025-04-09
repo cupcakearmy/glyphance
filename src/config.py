@@ -19,7 +19,7 @@ default_config = {
         },
         'clean': False,
     },
-    "context": ".",
+    'context': '.',
 }
 
 
@@ -37,21 +37,21 @@ def load(path):
         with open(path, 'r') as f:
             config = yaml.safe_load(f)
     except FileNotFoundError:
-        click.echo(f"Config file not found: {path}")
+        click.echo(f'Config file not found: {path}')
         exit(1)
     except yaml.YAMLError as e:
-        click.echo(f"Config file is not valid YAML: {path}")
+        click.echo(f'Config file is not valid YAML: {path}')
         click.echo(e)
         exit(1)
 
     # Setting dynamic defaults
     default_config['context'] = os.path.dirname(path)
-    if flags.OUTPUT_DIRECTORY != None:
+    if flags.OUTPUT_DIRECTORY is not None:
         default_config['output']['dir'] = flags.OUTPUT_DIRECTORY
-    if flags.CLEAN != None:
+    if flags.CLEAN is not None:
         default_config['output']['clean'] = flags.CLEAN
-    if flags.PREFIX != None:
+    if flags.PREFIX is not None:
         default_config['output']['prefix'] = flags.PREFIX
 
-   # Merge defaults
+    # Merge defaults
     return utils.update_deep(default_config, config)

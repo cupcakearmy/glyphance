@@ -5,9 +5,9 @@ type: object
 additionalProperties: false
 properties:
   fonts:
-    $ref: "#/$defs/fonts"
+    $ref: '#/$defs/fonts'
   output:
-    $ref: "#/$defs/output"
+    $ref: '#/$defs/output'
   context:
     type: string
 
@@ -17,20 +17,20 @@ $defs:
     additionalProperties: false
     patternProperties:
       "^[a-zA-z \\-_]+$":
-        $ref: "#/$defs/font"
+        $ref: '#/$defs/font'
 
   font:
     type: array
     items:
-      $ref: "#/$defs/font-variation"
+      $ref: '#/$defs/font-variation'
 
   css:
     type: object
     additionalProperties: false
     patternProperties:
       # https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#descriptors
-      ? "^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$"
-      : type: string
+      '^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$':
+        type: string
 
   font-variation:
     type: object
@@ -43,7 +43,7 @@ $defs:
       variable:
         type: boolean
       css:
-        $ref: "#/$defs/css"
+        $ref: '#/$defs/css'
   range:
     type: string
     patter: ^U\+[\da-zA-z]{4}(-[\da-zA-z]{4})?$
@@ -57,7 +57,7 @@ $defs:
       prefix:
         type: string
       css:
-        $ref: "#/$defs/css"
+        $ref: '#/$defs/css'
       clean:
         type: boolean
       formats:
@@ -74,4 +74,4 @@ $defs:
           "^[a-zA-z \\-_]+$":
             type: array
             items:
-              $ref: "#/$defs/range"
+              $ref: '#/$defs/range'

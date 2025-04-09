@@ -31,13 +31,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `dir`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-dir.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/dir")
+* defined in: [Config](glyphance-defs-output-properties-dir.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/dir")
 
 ### dir Type
 
@@ -49,13 +49,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `prefix`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-prefix.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/prefix")
+* defined in: [Config](glyphance-defs-output-properties-prefix.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/prefix")
 
 ### prefix Type
 
@@ -67,13 +67,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `css`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-css.md))
+* Type: `object` ([Details](glyphance-defs-css.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/css")
+* defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/css")
 
 ### css Type
 
@@ -85,13 +85,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `clean`
 
-*   is optional
+* is optional
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-clean.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/clean")
+* defined in: [Config](glyphance-defs-output-properties-clean.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/clean")
 
 ### clean Type
 
@@ -103,13 +103,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `formats`
 
-*   is optional
+* is optional
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-formats.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/formats")
+* defined in: [Config](glyphance-defs-output-properties-formats.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/formats")
 
 ### formats Type
 
@@ -121,13 +121,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output
 
 `ranges`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-output-properties-ranges.md))
+* Type: `object` ([Details](glyphance-defs-output-properties-ranges.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-ranges.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges")
+* defined in: [Config](glyphance-defs-output-properties-ranges.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges")
 
 ### ranges Type
 

@@ -28,13 +28,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/font-variation
 
 `file`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font-variation-properties-file.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/file")
+* defined in: [Config](glyphance-defs-font-variation-properties-file.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/file")
 
 ### file Type
 
@@ -46,13 +46,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/font-variation
 
 `variable`
 
-*   is optional
+* is optional
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font-variation-properties-variable.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/variable")
+* defined in: [Config](glyphance-defs-font-variation-properties-variable.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/variable")
 
 ### variable Type
 
@@ -64,13 +64,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/font-variation
 
 `css`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-css.md))
+* Type: `object` ([Details](glyphance-defs-css.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/css")
+* defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/css")
 
 ### css Type
 

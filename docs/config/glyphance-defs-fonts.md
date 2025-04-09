@@ -26,13 +26,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/fonts
 
 `^[a-zA-z \-_]+$`
 
-*   is optional
+* is optional
 
-*   Type: `object[]` ([Details](glyphance-defs-font-variation.md))
+* Type: `object[]` ([Details](glyphance-defs-font-variation.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font.md "https://github.com/cupcakearmy/glyphance#/$defs/fonts/patternProperties/^\[a-zA-z \\-_]+$")
+* defined in: [Config](glyphance-defs-font.md "https://github.com/cupcakearmy/glyphance#/$defs/fonts/patternProperties/^\[a-zA-z \\-_]+$")
 
 ### ^\[a-zA-z \\-\_]+$ Type
 

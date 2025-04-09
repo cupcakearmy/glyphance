@@ -26,13 +26,13 @@ https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges
 
 `^[a-zA-z \-_]+$`
 
-*   is optional
+* is optional
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-ranges-patternproperties-a-za-z--_.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges/patternProperties/^\[a-zA-z \\-_]+$")
+* defined in: [Config](glyphance-defs-output-properties-ranges-patternproperties-a-za-z--_.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges/patternProperties/^\[a-zA-z \\-_]+$")
 
 ### ^\[a-zA-z \\-\_]+$ Type
 

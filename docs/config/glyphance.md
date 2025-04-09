@@ -28,13 +28,13 @@ https://github.com/cupcakearmy/glyphance
 
 `fonts`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-fonts.md))
+* Type: `object` ([Details](glyphance-defs-fonts.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-fonts.md "https://github.com/cupcakearmy/glyphance#/properties/fonts")
+* defined in: [Config](glyphance-defs-fonts.md "https://github.com/cupcakearmy/glyphance#/properties/fonts")
 
 ### fonts Type
 
@@ -46,13 +46,13 @@ https://github.com/cupcakearmy/glyphance
 
 `output`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-output.md))
+* Type: `object` ([Details](glyphance-defs-output.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output.md "https://github.com/cupcakearmy/glyphance#/properties/output")
+* defined in: [Config](glyphance-defs-output.md "https://github.com/cupcakearmy/glyphance#/properties/output")
 
 ### output Type
 
@@ -64,13 +64,13 @@ https://github.com/cupcakearmy/glyphance
 
 `context`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-properties-context.md "https://github.com/cupcakearmy/glyphance#/properties/context")
+* defined in: [Config](glyphance-properties-context.md "https://github.com/cupcakearmy/glyphance#/properties/context")
 
 ### context Type
 
@@ -96,13 +96,13 @@ Reference this group by using
 
 `^[a-zA-z \-_]+$`
 
-*   is optional
+* is optional
 
-*   Type: `object[]` ([Details](glyphance-defs-font-variation.md))
+* Type: `object[]` ([Details](glyphance-defs-font-variation.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font.md "https://github.com/cupcakearmy/glyphance#/$defs/fonts/patternProperties/^\[a-zA-z \\-_]+$")
+* defined in: [Config](glyphance-defs-font.md "https://github.com/cupcakearmy/glyphance#/$defs/fonts/patternProperties/^\[a-zA-z \\-_]+$")
 
 #### ^\[a-zA-z \\-\_]+$ Type
 
@@ -137,13 +137,13 @@ Reference this group by using
 
 `^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-css-patternproperties-ascent-overridedescent-overridefont-displayfont-familyfont-stretchfont-stylefont-weightfont-feature-settingsfont-variation-settingsline-gap-overridesize-adjustsrcunicode-range.md "https://github.com/cupcakearmy/glyphance#/$defs/css/patternProperties/^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$")
+* defined in: [Config](glyphance-defs-css-patternproperties-ascent-overridedescent-overridefont-displayfont-familyfont-stretchfont-stylefont-weightfont-feature-settingsfont-variation-settingsline-gap-overridesize-adjustsrcunicode-range.md "https://github.com/cupcakearmy/glyphance#/$defs/css/patternProperties/^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$")
 
 #### ^ascent-override|descent-override|font-display|font-family|font-stretch|font-style|font-weight|font-feature-settings|font-variation-settings|line-gap-override|size-adjust|src|unicode-range$ Type
 
@@ -169,13 +169,13 @@ Reference this group by using
 
 `file`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font-variation-properties-file.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/file")
+* defined in: [Config](glyphance-defs-font-variation-properties-file.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/file")
 
 #### file Type
 
@@ -187,13 +187,13 @@ Reference this group by using
 
 `variable`
 
-*   is optional
+* is optional
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-font-variation-properties-variable.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/variable")
+* defined in: [Config](glyphance-defs-font-variation-properties-variable.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/variable")
 
 #### variable Type
 
@@ -205,13 +205,13 @@ Reference this group by using
 
 `css`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-css.md))
+* Type: `object` ([Details](glyphance-defs-css.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/css")
+* defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/font-variation/properties/css")
 
 #### css Type
 
@@ -251,13 +251,13 @@ Reference this group by using
 
 `dir`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-dir.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/dir")
+* defined in: [Config](glyphance-defs-output-properties-dir.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/dir")
 
 #### dir Type
 
@@ -269,13 +269,13 @@ Reference this group by using
 
 `prefix`
 
-*   is optional
+* is optional
 
-*   Type: `string`
+* Type: `string`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-prefix.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/prefix")
+* defined in: [Config](glyphance-defs-output-properties-prefix.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/prefix")
 
 #### prefix Type
 
@@ -287,13 +287,13 @@ Reference this group by using
 
 `css`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-css.md))
+* Type: `object` ([Details](glyphance-defs-css.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/css")
+* defined in: [Config](glyphance-defs-css.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/css")
 
 #### css Type
 
@@ -305,13 +305,13 @@ Reference this group by using
 
 `clean`
 
-*   is optional
+* is optional
 
-*   Type: `boolean`
+* Type: `boolean`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-clean.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/clean")
+* defined in: [Config](glyphance-defs-output-properties-clean.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/clean")
 
 #### clean Type
 
@@ -323,13 +323,13 @@ Reference this group by using
 
 `formats`
 
-*   is optional
+* is optional
 
-*   Type: `string[]`
+* Type: `string[]`
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-formats.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/formats")
+* defined in: [Config](glyphance-defs-output-properties-formats.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/formats")
 
 #### formats Type
 
@@ -341,13 +341,13 @@ Reference this group by using
 
 `ranges`
 
-*   is optional
+* is optional
 
-*   Type: `object` ([Details](glyphance-defs-output-properties-ranges.md))
+* Type: `object` ([Details](glyphance-defs-output-properties-ranges.md))
 
-*   cannot be null
+* cannot be null
 
-*   defined in: [Config](glyphance-defs-output-properties-ranges.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges")
+* defined in: [Config](glyphance-defs-output-properties-ranges.md "https://github.com/cupcakearmy/glyphance#/$defs/output/properties/ranges")
 
 #### ranges Type
 
