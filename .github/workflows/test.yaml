@@ -15,7 +15,7 @@ jobs:
     name: Build Docker Image
     uses: cupcakearmy/workflows/.github/workflows/docker.yml@main
     with:
-      image: cupcakearmy/glyphance
+      name: cupcakearmy/glyphance
     secrets:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
