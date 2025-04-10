@@ -13,7 +13,7 @@ concurrency:
 jobs:
   build-image:
     name: Build Docker Image
-    uses: cupcakearmy/workflows/.github/workflows/docker-build.yml@main
+    uses: cupcakearmy/workflows/.github/workflows/docker.yml@main
     with:
       image: cupcakearmy/glyphance
     secrets:
